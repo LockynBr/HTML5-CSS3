@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <hr>
+    <p>Tente abrir esse site em vários dispositivos ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 46.875rem)" srcset="imagens/foto-p.png" type="image/png"> <!--750px == 46.875rem-->
+        <source media="(max-width: 65.625rem)" srcset="imagens/foto-m.png" type="image/png"> <!--1000PX == 62.5rem-->
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="midia/organicguitar.mp3" controls></audio>
+    <br>
+    <audio preload="metadata" controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav"> <!--FORMATA MTTT PESADO, EVITAR AO MÁXIMO-->
+        <p>Infelizmente, seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3" download="guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio> <!--MP3 WAV OGG-->
+</body>
+</html>

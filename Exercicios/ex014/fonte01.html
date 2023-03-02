@@ -1,0 +1,56 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body {
+            font-family: 'Work Sans', Helvetica, sans-serif;
+            /* 
+            Medidas Absolutas
+            cm, mm, in (polegada), px, pt, pc
+            *O site vai estar montado com a medida absoluta utilizada, mas a apresentação pode ser diferente*
+            *pt e pc não devem ser utilizados em telas*
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            *Para medidas de font-size, o W3C recomenda o uso do px e o uso do em*
+            *16px geralmente é igual a 1em*
+            */
+            font-size: 1em;
+            font-weight: bolder;
+            /* lighter, normal, bold, bolder*/
+            /* O peso de algumas fontes pode ir de 100 até 900*/
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        h1 {
+            /*font-family: 'Work Sans', sans-serif;
+            font-weight: 900;
+            font-size: 3em;
+            font-style: italic; */
+            font: italic 900 3em 'Work Sans', sans-serif;
+            /* shorthand font 
+            font-style -> font-weight -> font-size -> font-family 
+            */
+        }
+
+        h2 {
+            font: bold 2em 'Work Sans';
+            /* Se o font-style for normal, eu posso ocultá-lo ao fazer a shorthand */
+        }
+    </style>
+ </head>
+ <body>
+    <h1>Trabalhando com fontes</h1>
+    <h2>Exemplo h2</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat aut maiores, debitis id earum ducimus quod vel cupiditate quidem optio laudantium quaerat totam ipsum eius magnam nesciunt asperiores sint officia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptatem consequatur cumque commodi, ipsum vero dolores quidem perspiciatis est, inventore hic maxime repudiandae suscipit fugiat dolorum beatae iusto dignissimos itaque!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium eligendi in velit amet illo nam repudiandae sapiente quam obcaecati. Accusantium, repellendus! Blanditiis officia vel, libero quos maiores temporibus perferendis nobis!</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, atque, voluptatum cum odio repudiandae accusamus saepe consequatur sint dolorem, itaque possimus distinctio sapiente est odit adipisci rerum ab impedit illum.</p>
+ </body>
+ </html>
